@@ -7,7 +7,7 @@
     <title>Knitting World</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMzPvos_13Zhod8mDWXR9kNeVYe8dhQyc"></script>
 </head>
 
 <body class="page">
@@ -32,7 +32,12 @@
         <!--name of web page-->
     </header>
     <nav class="navigation">
-        Home | About | Projects | Contacts
+        <ul>
+           <li>Home |</li>    
+           <li>About |</li>
+           <li>Projects |</li>
+           <li>Contacts</li>
+        </ul>
     </nav>
     <section class="content_about_company">
         <header class="carusel">
@@ -82,10 +87,15 @@
             <fieldset>
                 <legend> you want to place an order, or have any questions, write and call me Anastasija Semen. Contacts
                     are listed below</legend>
-                <span><a href="tel:+380633343585"><img src="pictures/logoPictured/phone.jpg">+380633343585</a>
+                <span>
+                    <a href="tel:+380633343585">
+                        <img src="pictures/logoPictured/phone.jpg" alt="phone picture">+380633343585
+                    </a>
                 </span>
                 <br>
-                <span><img src="pictures/logoPictured/email.jpg"><b>anastasija.semen@gmail.com</b>
+                <span>
+                    <img src="pictures/logoPictured/email.jpg" alt="letter picture">
+                    <b>anastasija.semen@gmail.com</b>
                 </span>
 
                 <form method="POST" action="https://formspree.io/anastasija.semen@gmail.com">
@@ -112,13 +122,14 @@
     <aside>
         <fieldset>
             <legend>You also can find us:</legend>
-i need to put a mapgitkfdjgl;dkfJKNmgit remo
+            <div class="map" id="map"></div>
+            <!--need to init map from js-->
         </fieldset>
     </aside>
     <footer class="footer">
-            <p class="footer_slogan">Hand-made with love</p>
-            <img src="pictures/logoPictured/footer.jpg" alt="a lot of hearts">
-            <p class="copyright">Copyright ©2018 Web Developer</p>
+        <p class="footer_slogan">Hand-made with love</p>
+        <img src="pictures/logoPictured/footer.jpg" alt="a lot of hearts">
+        <p class="copyright">Copyright ©2018 Web Developer</p>
     </footer>
 </body>
 
