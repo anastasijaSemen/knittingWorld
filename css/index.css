@@ -65,27 +65,10 @@ h1 {
     margin: 5px;
     }
 nav.navigation ul li{
-    display: grid;
-    grid-column: rf rf rf rf;
-    grid-auto-rows: minmax(auto 80px);
+    display: flex;
+    justify-content: flex-around;
+    
 }
- a.box1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-a.box2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-a.box3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-a.box4 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
 
  nav {
     margin: 0 5px;
