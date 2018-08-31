@@ -47,7 +47,7 @@
         <header class="carusel">
             <h2 class="header_of_carusel">Be special with us</h2>
             <div class="carusel_hoover">
-                    <img src="pictures/photoForCarusel/carusel1.jpg" width="800" height="550" alt="sweaters for man by knitting machine">
+                <img src="pictures/photoForCarusel/carusel1.jpg" width="800" height="550" alt="sweaters for man by knitting machine">
             </div>
             <!--It will be carusel with two photos-->
         </header>
@@ -94,8 +94,8 @@
         <footer class="section_footer">
             <fieldset class="fildset_form">
                 <h3 class="contacts_form">Contacts:</h3>
-                <p class="fildset_form_legend"> You want to place an order, or have any questions, write and call me
-                    Anastasija Semen. Contacts are listed below</p>
+                <p class="fildset_form_legend"> You want to place an order, or have any questions, write and call me Anastasija
+                    Semen. Contacts are listed below</p>
                 <span class="span_call_me">
                     <a href="tel:+380633343585">
                         <img src="pictures/logoPictured/phone.jpg" alt="phone picture">+380633343585
@@ -110,9 +110,9 @@
                 <form id="contacts" class="form" method="POST" action="https://formspree.io/anastasija.semen@gmail.com">
 
                     <p class="instruction_to_form">You can also sending your letter to us now:</p>
-                        <input id="fullname" type="text" name="fullname" placeholder="Fullname">
+                    <input id="fullname" type="text" name="fullname" placeholder="Fullname">
                     <br>
-                        <input id="email" type="email" name="your-email" placeholder="Your Email">
+                    <input id="email" type="email" name="your-email" placeholder="Your Email">
                     <br>
                     <textarea id="message" name="message" placeholder="Your message" rows="5" required>
                         </textarea>
@@ -124,6 +124,19 @@
                 <fieldset class="fieldset_map">
                     <legend class="fieldset_legend">You also can find us:</legend>
                     <div class="map" id="map"></div>
+                    <script type="text/javascript">
+                        function initMap() {
+
+                            var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
+
+                            var mapOptions = {
+                                center: centerLatLng,
+                                zoom: 8
+                            };
+                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                        }
+                        google.maps.event.addDomListener(window, "load", initMap);
+                    </script>
                     <!--need to init map from js-->
                 </fieldset>
             </div>
@@ -135,7 +148,7 @@
         <img src="pictures/logoPictured/footer.jpg" alt="a lot of hearts">
         <p class="copyright">Copyright ©2018 Web Developer</p>
     </footer>
-    
+
 </body>
 
 </html>
