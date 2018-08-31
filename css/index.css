@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
-.map {
-	width: 100%;
-	height: 200px;
+:root {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
+body.page{
+    max-width: 800px;
+    margin: auto;
+}
+   body.page { display: grid;
+    grid-column: 20% 20% 20% 20% 20%;
+    grid-template-rows: 600px 70px 900px 70px
+  }
+   ul.sotial_networks {
+       display: flex;
+       justify-content: flex-end;
+   }
+nav {
+    display: flex;
+    
+}
+
