@@ -10,11 +10,11 @@ body.page{
 }
    body.page { display: grid;
     grid-column: 20% 20% 20% 20% 20%;
-    grid-template-rows: rf 70px 900px 70px;
+    grid-template-rows: rf 70px 600px 70px;
   }
   div.top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   span.logo {
       width: 40;
@@ -28,10 +28,14 @@ body.page{
       text-decoration: none;
       color: black;
       padding: 10px;
+      font-weight: bold;
   }
   a {
       text-decoration: none;
       color: black;
+  }
+  a:visited{
+      color: darkgray;
   }
   div.logo_tel {
       display: flex;
@@ -64,13 +68,135 @@ h1 {
     font-size: 45px;
     margin: 5px;
     }
-nav a{
+
+nav.navigation ul{
+    list-style-type: none;
     display: flex;
-    justify-content: flex-around;
-    
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 10px;
+    padding: 25px;
+    background-color: lightgrey;
+    text-decoration: underline;
+    font-size: 20px;
+}
+a:hover {
+background-color: white;
 }
 
- nav {
-    margin: 0 5px;
+h2.header_of_carusel{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    font-family:  'Abril Fatface';
+    letter-spacing: 5px;
+    font-size: 24px;
+    margin: 10px 20;
+    padding: 25px;
+    background-color: lightgrey;
 }
 
+div.carusel_hoover {
+    position: relative;
+    bottom: 85px;
+    z-index: -1;
+}
+h2.header_of_carusel{
+    position: absolute;
+    left: 680px;
+    z-index: 2;
+    bottom: -100px;
+      
+}
+h2.header_of_carusel {
+display: flex;
+align-items: flex-end;
+}
+article.about {
+    display: flex;
+    position: relative;
+    top: -70px;
+}
+.header_of_about{
+    font-weight: bold;
+    margin: 5px;
+    padding: 20px;
+    background-color: lightgrey;
+    text-decoration: underline;
+    font-size: 20px;
+   
+}
+.information_of_about{
+    display: flex;
+    align-items: center;
+    margin: 2em 1em;
+}
+.our_projects{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    font-weight: bold;
+    margin: 0;
+    padding: 25px;
+    background-color: lightgrey;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.photo_of_projects{
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -60px;
+}
+.green_dress{
+    position: relative;
+    bottom: -3em;
+    left: 15px;
+}
+.green_heat{
+    position: relative;
+    bottom: 180px;
+}
+.knit_for_kids{
+    position: relative;
+    left: 280px;
+    bottom: 180px;
+}
+.broun_scarf{
+    position: relative;
+    left: 25px;
+}
+
+.section_footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom:250px;
+    margin: 25px;
+    padding: 5px;
+    width: 450px;
+}
+
+footer.footer{
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    position: relative;
+    bottom: 15em;
+}
+.footer_slogan, .copyright{
+    display: block;
+    margin: 2em;
+    padding: 1,5em;
+    font-weight: bold;
+    font-family:  'Abril Fatface', cursive;
+}
+h3.contacts_form{
+display: flex;
+justify-content: center;
+position: relative;
+bottom: 1,5em;
+font-weight: bold;
+
+}
