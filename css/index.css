@@ -64,7 +64,7 @@ h1 {
     font-size: 45px;
     margin: 5px;
     }
-nav {
+nav a{
     display: flex;
     justify-content: flex-around;
     
