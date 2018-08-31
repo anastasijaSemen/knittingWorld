@@ -12,18 +12,22 @@
 
 <body class="page">
     <header class="page__header">
-        <span class="logo"> <img src="pictures/logoPictured/logo.png" alt="ball with wool">
-        </span>
-        <span class="tel"><a href="tel:+380633343585"><img src="pictures/logoPictured/phone.jpg" alt="phone picture">+380633343585</a>
-        </span>
-        <ul class="sotial_networks">
-          <li>  <a href="https://www.facebook.com/" title="Facebook"><img src="pictures/logoPictured/facebook.png" alt="facebook logo"
-                    width="80" height="80"></a></li>
-          <li>  <a href="https://www.instagram.com/" title="Instagram"><img src="pictures/logoPictured/instagram.png" alt="instagram logo"
-                    width="80" height="80"></a></li>
-            <li>    <a href="https://www.pinterest.com/" title="Pinterest"><img src="pictures/logoPictured/pinterest.png" alt="pinterest logo"
-                    width="80" height="80"></a></li>
-                </ul>
+        <div class="top">
+            <div class="logo_tel">
+                <span class="logo"> <img src="pictures/logoPictured/logo.png" alt="ball with wool" width="60" height="60">
+                </span>
+                <span class="tel"><a href="tel:+380633343585"><img src="pictures/logoPictured/phone.jpg" alt="phone picture">+380633343585</a>
+                </span>
+            </div>
+            <ul class="sotial_networks">
+                <li> <a href="https://www.facebook.com/" title="Facebook"><img src="pictures/logoPictured/facebook.png" alt="facebook logo"
+                            width="60" height="60"></a></li>
+                <li> <a href="https://www.instagram.com/" title="Instagram"><img src="pictures/logoPictured/instagram.png"
+                            alt="instagram logo" width="60" height="60"></a></li>
+                <li> <a href="https://www.pinterest.com/" title="Pinterest"><img src="pictures/logoPictured/pinterest.png"
+                            alt="pinterest logo" width="60" height="60"></a></li>
+            </ul>
+        </div>
         <h1 id="home">
             <b>
                 <i>Knitting World</i>
@@ -33,10 +37,10 @@
     </header>
     <nav class="navigation">
         <ul>
-            <li><a href="index.html#home">Home |</a></li>
-            <li><a href="index.html#about">About |</a></li>
-            <li><a href="index.html#projects">Projects |</a></li>
-            <li><a href="index.html#contacts">Contacts</a></li>
+            <li><a href="index.html#home" class="box1">Home |</a></li>
+            <li><a href="index.html#about" class="box2">About |</a></li>
+            <li><a href="index.html#projects"class="box3">Projects |</a></li>
+            <li><a href="index.html#contacts" class="box4">Contacts</a></li>
         </ul>
     </nav>
     <section class="content_about_company">
@@ -58,31 +62,31 @@
         <article class="projects">
             <h3 id="projects" class="our_projects"><b>Our Projects:</b></h3>
             <div class="photo_of_projects">
-            <p class="woman_sweater">
-                <a href="html/womanSweater.html">
-                    <img src="pictures/thumbnails/womanSweater.jpg" alt="hand-made womans sweater" width="250" height="250">
-                </a>
-            </p>
-            <p class="green_dress">
-                <a href="html/greenDress.html">
-                    <img src="pictures/thumbnails/greenDress.jpg" alt="long dress of machine knitting" width="250" height="400">
-                </a>
-            </p>
-            <p class="broun_scarf">
-                <a href="html/brounScurf.html">
-                    <img src="pictures/thumbnails/brounScurf.jpg" alt="Scurf knitted on hand" width="250" height="250">
-                </a>
-            </p>
-            <p class="green_heat">
-                <a href="html/greenHat.html">
-                    <img src="pictures/thumbnails/greenHat.jpg" alt="hand-made green hat" width="250" height="250">
-                </a>
-            </p>
-            <p class="knit_for_kids">
-                <a href="html/knitForKids.html">
-                    <img src="pictures/thumbnails/knitForKids.jpg" alt="hand-made sweater for little girl" width="250" height="250">
-                </a>
-            </p>
+                <p class="woman_sweater">
+                    <a href="html/womanSweater.html">
+                        <img src="pictures/thumbnails/womanSweater.jpg" alt="hand-made womans sweater" width="250" height="250">
+                    </a>
+                </p>
+                <p class="green_dress">
+                    <a href="html/greenDress.html">
+                        <img src="pictures/thumbnails/greenDress.jpg" alt="long dress of machine knitting" width="250" height="400">
+                    </a>
+                </p>
+                <p class="broun_scarf">
+                    <a href="html/brounScurf.html">
+                        <img src="pictures/thumbnails/brounScurf.jpg" alt="Scurf knitted on hand" width="250" height="250">
+                    </a>
+                </p>
+                <p class="green_heat">
+                    <a href="html/greenHat.html">
+                        <img src="pictures/thumbnails/greenHat.jpg" alt="hand-made green hat" width="250" height="250">
+                    </a>
+                </p>
+                <p class="knit_for_kids">
+                    <a href="html/knitForKids.html">
+                        <img src="pictures/thumbnails/knitForKids.jpg" alt="hand-made sweater for little girl" width="250" height="250">
+                    </a>
+                </p>
             </div>
         </article>
         <footer class="section_footer">
@@ -120,15 +124,15 @@
                 </form>
             </fieldset>
             <div class="aside">
-                    <fieldset class="fieldset_map">
-                        <legend class="fieldset_legend">You also can find us:</legend>
-                        <div class="map" id="map"></div>
-                        <!--need to init map from js-->
-                    </fieldset>
-                </div>
+                <fieldset class="fieldset_map">
+                    <legend class="fieldset_legend">You also can find us:</legend>
+                    <div class="map" id="map"></div>
+                    <!--need to init map from js-->
+                </fieldset>
+            </div>
         </footer>
     </section>
-   
+
     <footer class="footer">
         <p class="footer_slogan">Hand-made with love</p>
         <img src="pictures/logoPictured/footer.jpg" alt="a lot of hearts">
