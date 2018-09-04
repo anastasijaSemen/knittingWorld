@@ -160,15 +160,14 @@ article.about {
     position: relative;
     top: -60px;
 }
- /* @media (min-width: 400px){
+   /* @media (min-width: 400px){ 
     .photo_of_projects{
-        min-width: 400px;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
+        width: 100%;
+        display: block;
+        
 
     }
-}  */
+}   */
 
 .green_dress{
     position: relative;
