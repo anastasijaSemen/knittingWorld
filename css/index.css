@@ -60,7 +60,7 @@ h1 {
     justify-content: center;
     font-weight: bolder;
     letter-spacing: 3px;
-    font-size: 45px;
+    font-size: 3rem;
     margin: 5px;
     }
 
@@ -69,12 +69,25 @@ nav.navigation ul{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    margin: 10px;
+    margin: auto;
     padding: 25px;
     background-color: lightgrey;
     opacity: 0.5;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 1.5rem;
+}
+@media (min-width: 400px){
+    div.top {
+        display: flex;
+        justify-content: space-between;
+      }
+      ul.sotial_networks {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px 10px;
+        letter-spacing: 5px;
+     }
+
 }
 a:hover {
 background-color: white;
@@ -123,6 +136,7 @@ article.about {
     font-size: 20px;
    
 }
+
 .information_of_about{
     display: flex;
     align-items: center;
@@ -146,6 +160,16 @@ article.about {
     position: relative;
     top: -60px;
 }
+ /* @media (min-width: 400px){
+    .photo_of_projects{
+        min-width: 400px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+
+    }
+}  */
+
 .green_dress{
     position: relative;
     bottom: -3em;
@@ -163,7 +187,7 @@ article.about {
 .broun_scarf{
     position: relative;
     left: 25px;
-}
+} 
 
 .section_footer{
     display: flex;
