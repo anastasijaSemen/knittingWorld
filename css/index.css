@@ -8,10 +8,6 @@ body.page{
     max-width: 800px;
     margin: auto;
 }
-   body.page { display: grid;
-    grid-column: 20% 20% 20% 20% 20%;
-    grid-template-rows: rf 70px 600px 70px;
-  }
   div.top {
     display: flex;
     justify-content: space-between;
