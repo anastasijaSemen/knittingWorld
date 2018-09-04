@@ -13,9 +13,8 @@ body.page{
     justify-content: space-between;
   }
   span.logo {
-      width: 40;
-      height: 50;
-      margin: 10 20;
+      height: 50px;
+      margin: 10px 20px;
   }
   span.tel {
       display: flex;
@@ -88,7 +87,7 @@ h2.header_of_carusel{
     font-family:  'Abril Fatface';
     letter-spacing: 5px;
     font-size: 24px;
-    margin: 10px 20;
+    margin: 10px 20px;
     padding: 25px;
     background-color: lightgrey;
     opacity: 0.5;
@@ -185,8 +184,8 @@ footer.footer{
 }
 .footer_slogan, .copyright{
     display: block;
-    margin: 2em;
-    padding: 1,5em;
+    margin: 20px;
+    padding: 20px;
     font-weight: bold;
     font-family:  'Abril Fatface', cursive;
 }
@@ -194,7 +193,7 @@ h3.contacts_form{
 display: flex;
 justify-content: center;
 position: relative;
-bottom: 1,5em;
+bottom: 20px;
 font-weight: bold;
 
 }
