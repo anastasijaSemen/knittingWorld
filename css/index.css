@@ -14,8 +14,14 @@ body.page{
   }
   span.logo {
       height: 50px;
-      margin: 10px 20px;
-  }
+      margin: 1.3% 2.5%;
+      }
+      div.logo_tel {
+        display: flex;
+        justify-content:center ;  
+        margin: 10px;
+    }
+
   span.tel {
       display: flex;
       align-items: center;
@@ -26,11 +32,6 @@ body.page{
       font-weight: bold;
   }
   
-  div.logo_tel {
-      display: flex;
-      justify-content: flex-start;
-      margin: 10px;
-  }
   ul.sotial_networks {
     list-style-type: none;
 }
@@ -48,6 +49,13 @@ body.page{
        margin: 2px 0px;
        left: 2px ;
    }
+   /* @media (min-width: 400px){
+ul.sotial_networks{
+    justify-content: flex-start;
+}   */
+
+}
+
    nav.header_navigation ul{
     list-style-type: none;
     display: flex;
@@ -66,6 +74,9 @@ a {
 }
 a:visited{
     color: darkblue;
+}
+@media (min-width: 400px){
+
 }
 h1 {
     display: flex;
@@ -102,10 +113,9 @@ background-color: white;
 h2.header_of_carusel{
      display: flex;
     justify-content: flex-end;
-    margin-top: -100px; 
-    margin-left: 40%;
+    margin-top: -18%; 
+    margin-left: 45%;
     width: 40%;
-    /* float: left; */
     font-weight: bolder;
     font-family:  'Abril Fatface';
     letter-spacing: 0.4rem;
@@ -114,6 +124,16 @@ h2.header_of_carusel{
     background-color: lightgrey;
     opacity: 0.5;
 }
+/* @media (min-width: 400px){ 
+    .photo_of_projects{
+        width: 100%;
+        display: block;
+        
+
+    }
+}   */
+
+
 
 div.carusel_hoover {
     margin-top: -85px;
@@ -157,15 +177,7 @@ article.about {
     position: relative;
     top: -60px;
 }
-   /* @media (min-width: 400px){ 
-    .photo_of_projects{
-        width: 100%;
-        display: block;
-        
-
-    }
-}   */
-
+   
 .green_dress{
     position: relative;
     bottom: -3em;
