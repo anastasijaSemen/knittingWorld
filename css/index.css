@@ -49,7 +49,7 @@ body.page{
        margin: 2px 0px;
        left: 2px ;
    }
-   /* @media (min-width: 400px){
+   /* @media (max-width: 400px){
 ul.sotial_networks{
     justify-content: flex-start;
 }   */
@@ -124,7 +124,7 @@ h2.header_of_carusel{
     background-color: lightgrey;
     opacity: 0.5;
 }
-/* @media (min-width: 400px){ 
+/* @media (max-width: 400px){ 
     .photo_of_projects{
         width: 100%;
         display: block;
