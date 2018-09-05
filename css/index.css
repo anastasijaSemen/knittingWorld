@@ -94,21 +94,23 @@ h1 {
 a:hover {
 background-color: white;
 }
-div.carusel{
+/* div.carusel{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 h2.header_of_carusel{
-    /* display: flex;
+     display: flex;
     justify-content: flex-end;
-    margin: auto; */
+    margin-top: -100px; 
+    margin-left: 40%;
+    width: 40%;
+    /* float: left; */
     font-weight: bolder;
     font-family:  'Abril Fatface';
-    letter-spacing: 6px;
+    letter-spacing: 0.4rem;
     font-size: 1.5rem;
-    margin: 10px 20px;
-    padding: 20px;
+    padding: 2.5%;
     background-color: lightgrey;
     opacity: 0.5;
 }
