@@ -10,7 +10,7 @@ body.page{
 }
   div.top {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
   span.logo {
       height: 50px;
@@ -25,13 +25,7 @@ body.page{
       padding: 10px;
       font-weight: bold;
   }
-  a {
-      text-decoration: none;
-      color: black;
-  }
-  a:visited{
-      color: darkblue;
-  }
+  
   div.logo_tel {
       display: flex;
       justify-content: flex-start;
@@ -54,17 +48,7 @@ body.page{
        margin: 2px 0px;
        left: 2px ;
    }
-h1 {
-    display: flex;
-    font-family:  'Abril Fatface', cursive;
-    justify-content: center;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    font-size: 3rem;
-    margin: 5px;
-    }
-
-nav.navigation ul{
+   nav.header_navigation ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -76,6 +60,24 @@ nav.navigation ul{
     text-decoration: underline;
     font-size: 1.5rem;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: darkblue;
+}
+h1 {
+    display: flex;
+    font-family:  'Abril Fatface', cursive;
+    justify-content: center;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin: 5px;
+    }
+
+
 @media (min-width: 400px){
     div.top {
         display: flex;
@@ -96,32 +98,23 @@ background-color: white;
 h2.header_of_carusel{
     display: flex;
     justify-content: flex-end;
+    flex: 2;
+    position: relative;
+    top: -150px;
     font-weight: bolder;
     font-family:  'Abril Fatface';
-    letter-spacing: 5px;
-    font-size: 24px;
+    letter-spacing: 6px;
+    font-size: 1.5rem;
     margin: 10px 20px;
-    padding: 25px;
+    padding: 20px;
     background-color: lightgrey;
     opacity: 0.5;
 }
 
 div.carusel_hoover {
-    position: relative;
-    bottom: 85px;
-    z-index: -1;
+    margin-top: -85px;
 }
-h2.header_of_carusel{
-    position: absolute;
-    left: 680px;
-    z-index: 2;
-    bottom: -100px;
-      
-}
-h2.header_of_carusel {
-display: flex;
-align-items: flex-end;
-}
+
 article.about {
     display: flex;
     position: relative;
