@@ -145,13 +145,17 @@ h2.header_of_carusel{
 div.carusel_hoover {
     margin-top: -85px;
 }
-/* не можу зробити респонсів фото */
-@media only screen and (max-width: 600px){
-    div.carusel_hoover{
-    width: 100%;
-    }
+span.img_hover{
+    display: none;
 }
 
+@media only screen and (max-width: 600px){
+    div.carusel_hoover img {
+        width: 100%;
+        }
+    
+}
+/* треба повністю переписати код */
 article.about {
     display: flex;
     position: relative;
