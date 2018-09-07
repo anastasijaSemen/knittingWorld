@@ -8,8 +8,12 @@ body.page{
     max-width: 800px;
     margin: auto;
 }
+header {
+    width: 100%;
+}
   div.top {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   span.logo {
@@ -20,13 +24,13 @@ body.page{
         display: flex;
         margin: 10px;
     }
-    /* @media all and (min-width: 350px){
-      span.logo {
-        justify-content: flex-end;
-      }
- */
+    @media only screen and (max-width: 600px)and (min-width: 400px){
+        div.top{
+            font-size:small;
+        }
+    } 
 
-}
+
   span.tel {
       display: flex;
        list-style-type: none; 
@@ -53,13 +57,18 @@ body.page{
        margin: 2px 0px;
        left: 2px ;
    }
- @media all and (min-width: 350px) {
-ul.sotial_networks {
-    margin-left: 5px;
-    padding: 0px;
-    
+ @media only screen and (max-width: 600px) {
+    ul.sotial_networks {
+        padding: 0px; 
+        width: 50%;
+        } 
+}
+#burger {
+    display: none;
+  }
+label.nav_burger{
+    display: none;
 } 
-
    nav.header_navigation ul{
     list-style-type: none;
     display: flex;
@@ -79,27 +88,12 @@ a {
 a:visited{
     color: darkblue;
 }
-/* @media (min-width: 400px){
-    nav.header_navigation ul{
-        list-style-type: none;
-        display: flex;
-        align-items: flex-start;
-        font-weight: bold;
-        margin: auto;
-        padding: 25px;
-        background-color: lightgrey;
-        opacity: 0.5;
-        text-decoration: underline;
-        font-size: 0.7rem;
+@media only screen and (max-width: 600px){
+     nav.header_navigation ul{
+       font-size: small;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    a:visited{
-        color: darkblue;
-    }
-} */
+} 
+    
 h1 {
     display: flex;
     font-family:  'Abril Fatface', cursive;
@@ -110,28 +104,16 @@ h1 {
     margin: 5px;
     }
 
-
-@media (min-width: 400px){
-    div.top {
-        display: flex;
-        justify-content: space-between;
-      }
-      ul.sotial_networks {
-        display: flex;
-        justify-content: space-between;
-        margin: 2px 10px;
-        letter-spacing: 5px;
-     }
-
-}
 a:hover {
 background-color: white;
 }
-/* div.carusel{
-    display: flex;
-    flex-wrap: wrap;
-} */
+ @media only screen and (max-width: 600px){
+    h1 {
+        width: 100%;
+        text-align: center;
+    } 
 
+}
 h2.header_of_carusel{
      display: flex;
     justify-content: flex-end;
@@ -146,20 +128,28 @@ h2.header_of_carusel{
     background-color: lightgrey;
     opacity: 0.5;
 }
-/* @media (max-width: 400px){ 
-    .photo_of_projects{
-        width: 100%;
-
-        display: block;
-        
-
+@media only screen and (max-width: 600px){
+    h2.header_of_carusel{
+    width: 40%;
+    margin-top: -100px;
     }
-}   */
-
+}
+@media only screen and (max-width: 450px){
+    h2.header_of_carusel{
+        width: 50%;
+        margin-top: -140px;
+        }
+}
 
 
 div.carusel_hoover {
     margin-top: -85px;
+}
+/* не можу зробити респонсів фото */
+@media only screen and (max-width: 600px){
+    div.carusel_hoover{
+    width: 100%;
+    }
 }
 
 article.about {
@@ -259,5 +249,5 @@ font-weight: bold;
 .map {
 	width: 350px;
     height: 450px;
-    
-}
+    }
+ 
