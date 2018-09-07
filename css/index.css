@@ -18,20 +18,24 @@ body.page{
       }
       div.logo_tel {
         display: flex;
-        justify-content:center ;  
         margin: 10px;
     }
+    /* @media all and (min-width: 350px){
+      span.logo {
+        justify-content: flex-end;
+      }
+ */
 
+}
   span.tel {
       display: flex;
-      align-items: center;
-      list-style-type: none;
+       list-style-type: none; 
       text-decoration: none;
       color: black;
       padding: 10px;
       font-weight: bold;
   }
-  
+   
   ul.sotial_networks {
     list-style-type: none;
 }
@@ -49,12 +53,12 @@ body.page{
        margin: 2px 0px;
        left: 2px ;
    }
-   /* @media (max-width: 400px){
-ul.sotial_networks{
-    justify-content: flex-start;
-}   */
-
-}
+ @media all and (min-width: 350px) {
+ul.sotial_networks {
+    margin-left: 5px;
+    padding: 0px;
+    
+} 
 
    nav.header_navigation ul{
     list-style-type: none;
@@ -75,9 +79,27 @@ a {
 a:visited{
     color: darkblue;
 }
-@media (min-width: 400px){
-
-}
+/* @media (min-width: 400px){
+    nav.header_navigation ul{
+        list-style-type: none;
+        display: flex;
+        align-items: flex-start;
+        font-weight: bold;
+        margin: auto;
+        padding: 25px;
+        background-color: lightgrey;
+        opacity: 0.5;
+        text-decoration: underline;
+        font-size: 0.7rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:visited{
+        color: darkblue;
+    }
+} */
 h1 {
     display: flex;
     font-family:  'Abril Fatface', cursive;
@@ -127,6 +149,7 @@ h2.header_of_carusel{
 /* @media (max-width: 400px){ 
     .photo_of_projects{
         width: 100%;
+
         display: block;
         
 
