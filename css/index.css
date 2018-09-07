@@ -142,13 +142,12 @@ h2.header_of_carusel{
 }
 
 
-div.carusel_hoover {
+div.carusel_hover {
     margin-top: -85px;
 }
-span.img_hover{
-    display: none;
-}
-
+/* img.img_hover{
+   
+} */
 @media only screen and (max-width: 600px){
     div.carusel_hoover img {
         width: 100%;
