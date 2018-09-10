@@ -3,7 +3,7 @@
 :root {
     font-family: sans-serif;
 }
-
+ 
 body.page{
     max-width: 800px;
     margin: auto;
@@ -99,8 +99,8 @@ h1 {
     font-family:  'Abril Fatface', cursive;
     justify-content: center;
     font-weight: bolder;
-    letter-spacing: 3px;
-    font-size: 3rem;
+    letter-spacing: 2px;
+    font-size: 4rem;
     margin: 5px;
     }
 
@@ -114,7 +114,7 @@ background-color: white;
     } 
 
 }
-h2.header_of_carusel{
+h2.header_of_transform{
      display: flex;
     justify-content: flex-end;
     margin-top: -18%; 
@@ -129,36 +129,39 @@ h2.header_of_carusel{
     opacity: 0.5;
 }
 @media only screen and (max-width: 600px){
-    h2.header_of_carusel{
+    h2.header_of_transform{
     width: 40%;
     margin-top: -100px;
     }
 }
 @media only screen and (max-width: 450px){
-    h2.header_of_carusel{
+    h2.header_of_transform{
         width: 50%;
         margin-top: -140px;
         }
 }
 
 
-div.carusel_hover {
+div.transform_hover {
     margin-top: -85px;
+
 }
-/* img.img_hover{
-   
-} */
-@media only screen and (max-width: 600px){
-    div.carusel_hoover img {
+ img.transform_img {
+    width: 100%;
+} 
+
+ @media only screen and (max-width: 600px){
+    div.transform_hover img {
         width: 100%;
-        }
+    }
     
-}
-/* треба повністю переписати код */
+} 
+
 article.about {
     display: flex;
-    position: relative;
-    top: -70px;
+    justify-content: space-between;
+    margin-top: 80px;
+   
 }
 .header_of_about{
     font-weight: bold;
@@ -167,34 +170,96 @@ article.about {
     background-color: lightgrey;
     text-decoration: underline;
     font-size: 20px;
-   
-}
+   }
+   @media only screen and (max-width: 600px){
+    .header_of_about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   }
 
 .information_of_about{
-    display: flex;
     align-items: center;
     margin: 2em 1em;
 }
+img.wool {
+    width: 100%;
+    height: auto;
+}
+article.projects_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: fr fr fr ;
+    /* grid-template-areas: */
+    /* ".our_project  .our_project  .our_project"
+    ".woman_sweater .green_dress   .broun_scarf"
+    ".green_heat .green_heat  .knit_for_kids"; */
+   }
+
 .our_projects{
-    display: flex;
+ grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: bold;
+    margin: 0;
+    padding: 20px 50px;
+    background-color: lightgrey;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+}
+.woman_sweater{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%; 
+}
+.green_dress{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+     width: 100%; 
+} 
+.green_heat{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%; 
+}
+ .green_dress{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+     width: 100%; 
+} 
+    /* display: flex;
     justify-content: center;
-    position: relative;
-    top: -50px;
+    position: relative; 
+    top: -10px;
     font-weight: bold;
     margin: 0;
     padding: 25px;
     background-color: lightgrey;
     text-decoration: underline;
     font-size: 20px;
-}
-.photo_of_projects{
+} */
+
+
+/* .photo_of_projects{
     display:flex;
     flex-wrap: wrap;
-    position: relative;
-    top: -60px;
-}
+    width: 100%;
+} */
+    /* position: relative;
+    top: -60px; */
+/* } */
    
-.green_dress{
+/* .green_dress{
     position: relative;
     bottom: -3em;
     left: 15px;
@@ -211,7 +276,7 @@ article.about {
 .broun_scarf{
     position: relative;
     left: 25px;
-} 
+}  */
 
 .section_footer{
     display: flex;
