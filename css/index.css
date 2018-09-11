@@ -6,6 +6,7 @@
  
 body.page{
     max-width: 800px;
+    /* height: 100%; */
     margin: auto;
 }
 header {
@@ -268,6 +269,7 @@ img.wool {
     }
     .img_wool{
        display: flex;
+    }
 }
 @media only screen and (max-width: 450px){
     .information_of_about{
@@ -276,128 +278,141 @@ img.wool {
        font-size: 13px;
     }
 }
-article.projects_container{
+#projects{
+   display: block;
+   text-align: center;
+   font-weight: bold;
+   margin: 5px;
+   padding: 20px;
+   background-color: lightgrey;
+   text-decoration: underline;
+   font-size: 20px;
+   
+}
+div.photo_of_projects{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: fr fr fr ;
-    /* grid-template-areas: */
-    /* ".our_project  .our_project  .our_project"
-    ".woman_sweater .green_dress   .broun_scarf"
-    ".green_heat .green_heat  .knit_for_kids"; */
-   }
-
-.our_projects{
-    margin: 2px;
-    padding: 10px;
-    font-size: 16px;
+    grid-column: auto auto auto;
+    grid-row: auto auto;
+    grid-row-gap: 1px;
 }
 .woman_sweater{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    width: 100%; 
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;  
 }
 .green_dress{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-     width: 100%; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 80px;
+     width: 100%;  
 } 
 .green_heat{
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    width: 100%; 
-}
- .green_dress{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-     width: 100%; 
-} 
-    /* display: flex;
-    justify-content: center;
-    position: relative; 
-    top: -10px;
-    font-weight: bold;
-    margin: 0;
-    padding: 25px;
-    background-color: lightgrey;
-    text-decoration: underline;
-    font-size: 20px;
-} */
-
-
-/* .photo_of_projects{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-} */
-    /* position: relative;
-    top: -60px; */
-/* } */
-   
-/* .green_dress{
-    position: relative;
-    bottom: -3em;
-    left: 15px;
-}
-.green_heat{
-    position: relative;
-    bottom: 180px;
-}
-.knit_for_kids{
-    position: relative;
-    left: 280px;
-    bottom: 180px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+     width: 100%;  
 }
 .broun_scarf{
-    position: relative;
-    left: 25px;
-}  */
-
+    margin-top: -10px;
+}
+.knit_for_kids{
+    margin-top: -10px;
+}
+@media only screen and (max-width: 768px){
+    div.photo_of_projects{
+        display: block;
+        margin: 0px 240px;
+    }
+    .green_dress{
+        margin-top: -15px;
+    }
+}
+@media only screen and (max-width: 570px){
+    div.photo_of_projects{
+        display: block;
+        margin: 0px 150px;
+    }
+    .green_dress{
+        margin-top: -15px;
+    }
+}
+@media only screen and (max-width: 470px){
+    div.photo_of_projects{
+        display: block;
+        margin: 0px 100px;
+    }
+    .green_dress{
+        margin-top: -15px;
+    }
+}
+@media only screen and (max-width: 370px){
+    div.photo_of_projects{
+        display: block;
+        margin: 0px 50px;
+    }
+    .green_dress{
+        margin-top: -15px;
+    }
+}
 .section_footer{
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    bottom:250px;
-    margin: 25px;
-    padding: 5px;
-    width: 490px;
+    height: 420px;
+    }
+fieldset {
+    background-color: lightgrey;
 }
-
-footer.footer{
-    display: flex;
-    justify-content: center;
-    background-color: lightgray;
-    position: relative;
-    bottom: 15em;
-}
-.footer_slogan, .copyright{
-    display: block;
-    margin: 20px;
-    padding: 20px;
+h3{
+    text-align: center;
     font-weight: bold;
-    font-family:  'Abril Fatface', cursive;
 }
-h3.contacts_form{
-display: flex;
-justify-content: center;
-position: relative;
-bottom: 20px;
-font-weight: bold;
-
+.instruction_to_form{
+    text-align: center;
+    font-weight: bold;
 }
-.fieldset_form{
-    background-color: lightgray;
+input{
+    width: 100%;
 }
-
+textarea {
+    width: 100%;
+}
+.button {
+   text-align: center;
+}
 .map {
 	width: 350px;
-    height: 450px;
+    height: 320px;
+} 
+@media only screen and (max-width: 660px) and (min-width: 320px){
+    .section_footer{
+        display: block;
     }
- 
+    .map{
+        width: 100%;
+        height: 320px;
+    }
+}
+footer.footer{
+        display: flex;
+        justify-content: center;
+        position: fixed; 
+        left: 0; bottom: 0; 
+        padding: 5px;
+        background: darkgrey;
+        color: #fff;
+        width: 100%;
+}
+      
+.footer_slogan, .copyright{
+    font-family:  'Abril Fatface', cursive;
+}
+.footer_slogan{
+    padding:0% 5%;
+}
+.copyright{
+    padding:0% 5%;
+}
