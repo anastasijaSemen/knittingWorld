@@ -399,14 +399,24 @@ textarea {
 footer.footer{
         display: flex;
         justify-content: center;
-        position: fixed; 
         left: 0; bottom: 0; 
         padding: 5px;
         background: darkgrey;
         color: #fff;
         width: 100%;
 }
-      
+@media only screen and (max-width: 600px){
+    footer.footer{
+        display: flex;
+        justify-content: center;
+        left: 0; bottom: 0; 
+        padding: 5px;
+        background: darkgrey;
+        color: #fff;
+        width: 100%;
+}
+}
+
 .footer_slogan, .copyright{
     font-family:  'Abril Fatface', cursive;
 }
