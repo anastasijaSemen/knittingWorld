@@ -254,9 +254,6 @@ p.information_of_about{
     margin: 5px;
     font-size: 17px;
 }
-img.wool {
-    width: 100%;
-}  
 
 @media only screen and (max-width: 600px){
     .information_of_about{
@@ -265,8 +262,11 @@ img.wool {
         width: 60%;
         text-align: start;
     }
-    .img_wool{
-       width: 100%;
+   
+}
+@media only screen and (max-width: 550px){
+    #wool{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 450px){
