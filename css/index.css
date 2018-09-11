@@ -11,65 +11,87 @@ body.page{
 header {
     width: 100%;
 }
-  div.top {
+div.top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  span.logo {
-      height: 50px;
-      margin: 1.3% 2.5%;
-      }
-      div.logo_tel {
+}
+span.logo {
+    height: 50px;
+    margin: 1.3% 2.5%;
+}
+div.logo_tel {
+    display: flex;
+    margin: 10px;
+}
+@media only screen and (max-width: 600px){
+    div.top{
         display: flex;
+        justify-content: space-around;
+        width:100%;
+        font-size:small;
+    }
+} 
+@media only screen and (max-width: 500px){
+    div.top{
+        font-size:smaller;
+    }
+    span.logo {
+        display: none;
+    }
+    span.tel {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none; 
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-weight: normal;
+    }
+    div.logo_tel {
+        display: flex;
+        justify-content: flex-start;
         margin: 10px;
     }
-    @media only screen and (max-width: 600px)and (min-width: 400px){
-        div.top{
-            font-size:small;
-        }
-    } 
-
-
-  span.tel {
-      display: flex;
-       list-style-type: none; 
-      text-decoration: none;
-      color: black;
-      padding: 10px;
-      font-weight: bold;
-  }
-   
-  ul.sotial_networks {
+}
+span.tel {
+    display: flex;
+    list-style-type: none; 
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+ul.sotial_networks {
     list-style-type: none;
 }
-   ul.sotial_networks {
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       margin: 2px 10px;
-       top: 20px;
-       letter-spacing: 5px;
-    }
-   ul li a{ 
-       display: flex;
-       align-items: center;
-       margin: 2px 0px;
-       left: 2px ;
-   }
- @media only screen and (max-width: 600px) {
+ul.sotial_networks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2px 10px;
+    top: 20px;
+    letter-spacing: 5px;
+}
+ul li a{ 
+    display: flex;
+    align-items: center;
+    margin: 2px 0px;
+    left: 2px ;
+}
+@media only screen and (max-width: 600px) {
     ul.sotial_networks {
         padding: 0px; 
         width: 50%;
-        } 
+    } 
 }
 #burger {
     display: none;
-  }
+}
 label.nav_burger{
     display: none;
 } 
-   nav.header_navigation ul{
+nav.header_navigation ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -89,11 +111,10 @@ a:visited{
     color: darkblue;
 }
 @media only screen and (max-width: 600px){
-     nav.header_navigation ul{
+    nav.header_navigation ul{
        font-size: small;
     }
 } 
-    
 h1 {
     display: flex;
     font-family:  'Abril Fatface', cursive;
@@ -102,20 +123,42 @@ h1 {
     letter-spacing: 2px;
     font-size: 4rem;
     margin: 5px;
-    }
-
-a:hover {
-background-color: white;
 }
- @media only screen and (max-width: 600px){
+a:hover {
+    background-color: white;
+}
+@media only screen and (max-width: 600px){
     h1 {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 3.2rem;
         width: 100%;
         text-align: center;
     } 
-
+}
+@media only screen and (max-width: 500px){
+    h1{
+        display: flex;
+        justify-content: space-between;
+        font-weight: normal;
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 380px){
+    h1{
+        display: flex;
+        justify-content: space-between;
+        font-weight: normal;
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
 }
 h2.header_of_transform{
-     display: flex;
+    display: flex;
     justify-content: flex-end;
     margin-top: -18%; 
     margin-left: 45%;
@@ -130,61 +173,108 @@ h2.header_of_transform{
 }
 @media only screen and (max-width: 600px){
     h2.header_of_transform{
-    width: 40%;
-    margin-top: -100px;
+        width: 40%;
+        margin-top: -100px;
     }
 }
 @media only screen and (max-width: 450px){
     h2.header_of_transform{
         width: 50%;
+        font-size: 1rem;
+        font-weight: bold;
         margin-top: -140px;
-        }
+    }
 }
-
-
+@media only screen and (max-width: 350px){
+    h2.header_of_transform{
+        margin-top: -90px;
+        font-size: 1rem;
+        font-weight: normal;
+    } 
+}
 div.transform_hover {
     margin-top: -85px;
-
 }
- img.transform_img {
+img.transform_img {
     width: 100%;
 } 
-
- @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
     div.transform_hover img {
         width: 100%;
     }
     
 } 
-
 article.about {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     margin-top: 80px;
-   
 }
-.header_of_about{
+@media only screen and (max-width: 600px){
+    article.about{
+      display: block;
+      margin-top: 30px;
+    }
+}  
+#about{
+    display: flex;
     font-weight: bold;
     margin: 5px;
     padding: 20px;
     background-color: lightgrey;
     text-decoration: underline;
     font-size: 20px;
-   }
-   @media only screen and (max-width: 600px){
-    .header_of_about{
-        flex-wrap: wrap;
-        justify-content: center;
+}
+@media only screen and (max-width: 600px){
+    #about{
+        display: block;
+        margin: 2px;
+        padding: 10px;
+        font-size: 16px;
     }
-   }
-
-.information_of_about{
+} 
+@media only screen and (max-width: 450px){
+    #about{
+        margin-top: 60px;
+    } 
+}
+@media only screen and (max-width: 350px){
+    #about{
+        margin-top: 40px;
+    } 
+}
+div.about_container{
+    display: flex;
+}
+p.information_of_about{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin: 2em 1em;
+    text-align: end;
+    margin: 5px;
+    font-size: 17px;
 }
 img.wool {
-    width: 100%;
+    width: 200px;
+    height: 250px;
     height: auto;
+
+}  
+@media only screen and (max-width: 600px){
+    .information_of_about{
+        display: flex;
+        justify-content: flex-end;
+        width: 60%;
+        text-align: start;
+    }
+    .img_wool{
+       display: flex;
+}
+@media only screen and (max-width: 450px){
+    .information_of_about{
+       align-items: center;
+       margin: 5px;
+       font-size: 13px;
+    }
 }
 article.projects_container{
     display: grid;
@@ -197,17 +287,9 @@ article.projects_container{
    }
 
 .our_projects{
- grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-weight: bold;
-    margin: 0;
-    padding: 20px 50px;
-    background-color: lightgrey;
-    text-decoration: underline;
-    font-size: 20px;
-    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    font-size: 16px;
 }
 .woman_sweater{
     grid-column-start: 1;
