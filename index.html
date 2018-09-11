@@ -7,7 +7,7 @@
     <title>knitting world</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMzPvos_13Zhod8mDWXR9kNeVYe8dhQyc"></script>
+    
 </head>
 
 <body class="page">
@@ -130,19 +130,6 @@
             <fieldset class="block_map">
                 <h3 class="head_of_map">You can also find us:</h3>
                 <div class="map" id="map"></div>
-                <script>
-                    function initMap() {
-
-                        var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
-
-                        var mapOptions = {
-                            center: centerLatLng,
-                            zoom: 8
-                        };
-                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                    }
-                    google.maps.event.addDomListener(window, "load", initMap);
-                </script>
                 </div>
             </fieldset>
 
@@ -154,7 +141,8 @@
         <img src="pictures/logoPictured/footer.jpg" alt="a lot of hearts">
         <p class="copyright">Copyright ©2018 Web Developer</p>
     </footer>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMzPvos_13Zhod8mDWXR9kNeVYe8dhQyc"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
