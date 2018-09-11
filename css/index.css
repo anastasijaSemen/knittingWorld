@@ -255,11 +255,9 @@ p.information_of_about{
     font-size: 17px;
 }
 img.wool {
-    width: 200px;
-    height: 250px;
-    height: auto;
-
+    width: 100%;
 }  
+
 @media only screen and (max-width: 600px){
     .information_of_about{
         display: flex;
@@ -268,7 +266,7 @@ img.wool {
         text-align: start;
     }
     .img_wool{
-       display: flex;
+       width: 100%;
     }
 }
 @media only screen and (max-width: 450px){
@@ -277,6 +275,9 @@ img.wool {
        margin: 5px;
        font-size: 13px;
     }
+    .img_wool{
+        width: 100%;
+     }
 }
 #projects{
    display: block;
@@ -361,7 +362,6 @@ div.photo_of_projects{
 }
 .section_footer{
     display: flex;
-    height: 420px;
     }
 fieldset {
     background-color: lightgrey;
