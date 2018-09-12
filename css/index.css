@@ -245,7 +245,7 @@ article.about {
 } 
 @media only screen and (max-width: 450px){
     #about{
-        margin-top: 60px;
+        margin-top: 90px;
     } 
 }
 @media only screen and (max-width: 350px){
