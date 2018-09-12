@@ -161,7 +161,7 @@ a:hover {
 h2.header_of_transform{
     display: flex;
     justify-content: flex-end;
-    margin-top: -18%; 
+    margin-top: -15%; 
     margin-left: 45%;
     width: 40%;
     font-weight: bolder;
@@ -176,6 +176,7 @@ h2.header_of_transform{
     h2.header_of_transform{
         width: 40%;
         margin-top: -100px;
+
     }
 }
 @media only screen and (max-width: 450px){
@@ -193,18 +194,27 @@ h2.header_of_transform{
         font-weight: normal;
     } 
 }
+.slider_quicklinks {
+    width:100%;
+    margin-top: -85px;
+  }
+.slidesmain_fade{
+    width: 100%;
+}
 div.transform_hover {
     margin-top: -85px;
-}
-img.transform_img {
-    width: 100%;
 } 
+div.text {
+    margin-top: -35px;
+    font-size: 18px;
+    background-color: lightgrey;
+    opacity: 0.5;
+}
 @media only screen and (max-width: 600px){
-    div.transform_hover img {
+    div.slidesmain_fade img{
         width: 100%;
     }
-    
-} 
+}
 article.about {
     display: flex;
     justify-content: space-between; 
