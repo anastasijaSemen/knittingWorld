@@ -26,3 +26,21 @@ function initMap() {
 }
 google.maps.event.addDomListener(window, "load", initMap);
 
+document.querySelector(".woman_sweater").addEventListener("click", f1)
+document.querySelector(".green_dress").addEventListener("click", f2)
+
+function f1(){
+    fetchProjectJson(1)
+}
+
+function f2(){
+    fetchProjectJson(1)
+}
+
+function fetchProjectJson(i){
+    fetch('json/'+i+'.json')
+    .then(data =>data.json)
+    .then(projectData =>{
+        document.querySelector(".projects_container").innerHTML = "<div>"+projectData.title+"<img src=\""+projectData.bigPictureAddress+"\"/></div>"
+    })
+}

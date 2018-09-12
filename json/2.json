@@ -1,0 +1,9 @@
+{
+    "title":"Green dress",
+    "bigPictureAddress":"pictures/greenDress.jpg",
+    "description":"The best green dress ever",
+    "sizes":["xs","s"],
+    "price":100500,
+    "acrylic":false,
+    "available":true
+}
