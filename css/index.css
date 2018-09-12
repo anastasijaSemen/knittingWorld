@@ -253,9 +253,9 @@ article.about {
         margin-top: 40px;
     } 
 }
-div.about_container{
+ div.about_container{
     display: flex;
-}
+} 
 p.information_of_about{
     display: flex;
     justify-content: flex-end;
@@ -266,7 +266,7 @@ p.information_of_about{
 }
 
 @media only screen and (max-width: 600px){
-    .information_of_about{
+    p.information_of_about{
         display: flex;
         justify-content: flex-end;
         width: 60%;
@@ -274,20 +274,23 @@ p.information_of_about{
     }
    
 }
-@media only screen and (max-width: 550px){
-    #wool{
-        width: 100%;
+@media only screen and (max-width: 500px){
+    p.information_of_about{
+        font-size: 12 px;
+    }
+    .wool{
+        display: block;
+        width: 40%;
+        height: 200px;
+        float: right;
     }
 }
-@media only screen and (max-width: 450px){
-    .information_of_about{
+@media only screen and (max-width: 450px) and (min-width: 320px){
+    p.information_of_about{
        align-items: center;
        margin: 5px;
-       font-size: 13px;
+       font-size: 10px;
     }
-    .img_wool{
-        width: 100%;
-     }
 }
 #projects{
    display: block;
