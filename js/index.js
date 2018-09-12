@@ -34,13 +34,13 @@ function f1(){
 }
 
 function f2(){
-    fetchProjectJson(1)
+    fetchProjectJson(2)
 }
 
 function fetchProjectJson(i){
     fetch('json/'+i+'.json')
-    .then(data =>data.json)
-    .then(projectData =>{
-        document.querySelector(".projects_container").innerHTML = "<div>"+projectData.title+"<img src=\""+projectData.bigPictureAddress+"\"/></div>"
+    .then(data => {
+        const projectsContainer = document.querySelector(".projects_container");
+        projectsContainer.innerHTML = "<div>"+data.json.title+"<img src=\""+data.json.bigPictureAddress+"\"/></div>"
     })
 }
