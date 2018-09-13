@@ -1,4 +1,4 @@
-
+// carousel
 let slideIndex = 0;
 showCarousel();
 
@@ -14,6 +14,8 @@ function showCarousel() {
     setTimeout(showCarousel, 3000); 
 }
 
+
+
 function initMap() {
 
     var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
@@ -26,8 +28,12 @@ function initMap() {
 }
 google.maps.event.addDomListener(window, "load", initMap);
 
+// imitation of backend. Data from JSON to section our projects
 document.querySelector(".woman_sweater").addEventListener("click", f1)
 document.querySelector(".green_dress").addEventListener("click", f2)
+document.querySelector(".green_heat").addEventListener("click", f3)
+document.querySelector(".broun_scarf").addEventListener("click", f4)
+document.querySelector(".knit_for_kids").addEventListener("click", f5)
 
 function f1(){
     fetchProjectJson(1)
@@ -36,6 +42,16 @@ function f1(){
 function f2(){
     fetchProjectJson(2)
 }
+function f3(){
+    fetchProjectJson(3)
+}
+function f4(){
+    fetchProjectJson(4)
+}
+function f5(){
+    fetchProjectJson(5)
+}
+
 
 function fetchProjectJson(i){
     fetch('json/'+i+'.json')
