@@ -28,6 +28,21 @@ function initMap() {
 }
 google.maps.event.addDomListener(window, "load", initMap);
 
+
+
+// smooth scroll
+$(function() {
+    $('.smooth').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 900);
+        }
+    });
+});
+
 // imitation of backend. Data from JSON to section our projects
 document.querySelector(".woman_sweater").addEventListener("click", f1)
 document.querySelector(".green_dress").addEventListener("click", f2)
