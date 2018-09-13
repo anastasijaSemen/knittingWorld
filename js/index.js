@@ -77,14 +77,14 @@ function fetchProjectJson(i){
     })
 }
 
-// // Closse origin photo
-// $('.js_close_thank_you').click(function() { // clik on button
-// 	$('.js_overlay_thank_you').fadeOut();
-// });
+// Closse origin photo
+$('.js_close_thank_you').click(function() { // clik on button
+	$('.js_overlay_thank_you').fadeOut();
+});
 
-// $(document).mouseup(function (e) { // clik around a button
-// 	const popup = $('.popup');
-// 	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
-// 		$('.js_overlay_thank_you').fadeOut();
-// 	}
-// });
+$(document).mouseup(function (e) { // clik around a button
+	const popup = $('.popup');
+	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+		$('.js_overlay_thank_you').fadeOut();
+	}
+});
