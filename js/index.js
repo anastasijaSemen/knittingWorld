@@ -73,18 +73,19 @@ function fetchProjectJson(i){
     .then(data => data.json())
     .then(json => {
         const projectsContainer = document.querySelector(".projects_container");
-        projectsContainer.innerHTML = "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/></div>"
+        projectsContainer.innerHTML = 
+        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/><button>"+close+"</button>"+json.p+"</div>"
     })
 }
 
-// Closse origin photo
-$('.js_close_thank_you').click(function() { // clik on button
-	$('.js_overlay_thank_you').fadeOut();
-});
+// // Closse origin photo
+// $('.js_close_thank_you').click(function() { // clik on button
+// 	$('.js_overlay_thank_you').fadeOut();
+// });
 
-$(document).mouseup(function (e) { // clik around a button
-	const popup = $('.popup');
-	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
-		$('.js_overlay_thank_you').fadeOut();
-	}
-});
+// $(document).mouseup(function (e) { // clik around a button
+// 	const popup = $('.popup');
+// 	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+// 		$('.js_overlay_thank_you').fadeOut();
+// 	}
+// });
