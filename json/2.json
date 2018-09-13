@@ -1,9 +1,9 @@
 {
     "title":"Green dress",
     "bigPictureAddress":"pictures/greenDress.jpg",
-    "description":"The best green dress ever",
+    "description":"Knitting machine for woman. Exclusive ",
     "sizes":["xs","s"],
-    "price":100500,
+    "price":800,
     "acrylic":false,
     "available":true
 }

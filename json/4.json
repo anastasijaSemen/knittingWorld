@@ -1,0 +1,9 @@
+{
+    "title":"Broun scarf",
+    "bigPictureAddress":"pictures/brounScurf.jpg",
+    "description":"This scarf was knitted on hand",
+    "sizes":["one size"],
+    "price":300,
+    "acrylic":false,
+    "available":true
+}

@@ -1,0 +1,10 @@
+
+{
+"title":"Green heat",
+"bigPictureAddress":"pictures/greenHat.jpg",
+"description":"Hand made. Really hard work and so cool result",
+"sizes":["s","m"],
+"price":450,
+"acrylic":false,
+"available":true
+}

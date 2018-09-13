@@ -1,9 +1,9 @@
 {
     "title":"Woman swaeter",
     "bigPictureAddress":"pictures/womanSweater.jpg",
-    "description":"The best woman sweter ever",
+    "description":"The best woman sweater ever",
     "sizes":["xs","s"],
-    "price":100500,
+    "price":300,
     "acrylic":false,
     "available":true
 }

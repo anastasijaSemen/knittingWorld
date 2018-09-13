@@ -1,0 +1,9 @@
+{
+    "title":"Knit for kids",
+    "bigPictureAddress":"pictures/knitForKids.jpg",
+    "description":"Hand made for kids looks so preaty",
+    "sizes":["xs","s"],
+    "price":400,
+    "acrylic":false,
+    "available":true
+}
