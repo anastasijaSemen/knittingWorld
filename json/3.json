@@ -1,10 +1,9 @@
-
 {
-"title":"Green heat",
-"bigPictureAddress":"pictures/greenHat.jpg",
-"description":"Hand made. Really hard work and so cool result",
-"sizes":["s","m"],
-"price":450,
-"acrylic":false,
-"available":true
+    "title":"Broun scarf",
+    "bigPictureAddress":"pictures/brounScurf.jpg",
+    "description":"This scarf was knitted on hand",
+    "sizes":["one size"],
+    "price":300,
+    "acrylic":false,
+    "available":true
 }

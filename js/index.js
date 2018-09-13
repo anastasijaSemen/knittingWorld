@@ -31,8 +31,8 @@ google.maps.event.addDomListener(window, "load", initMap);
 // imitation of backend. Data from JSON to section our projects
 document.querySelector(".woman_sweater").addEventListener("click", f1)
 document.querySelector(".green_dress").addEventListener("click", f2)
-document.querySelector(".green_heat").addEventListener("click", f3)
-document.querySelector(".broun_scarf").addEventListener("click", f4)
+document.querySelector(".broun_scarf").addEventListener("click", f3)
+document.querySelector(".green_heat").addEventListener("click", f4)
 document.querySelector(".knit_for_kids").addEventListener("click", f5)
 
 function f1(){
@@ -61,3 +61,15 @@ function fetchProjectJson(i){
         projectsContainer.innerHTML = "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/></div>"
     })
 }
+
+// // Closse origin photo
+// $('.js_close_thank_you').click(function() { // clik on button
+// 	$('.js_overlay_thank_you').fadeOut();
+// });
+
+// $(document).mouseup(function (e) { // clik around a button
+// 	const popup = $('.popup');
+// 	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+// 		$('.js_overlay_thank_you').fadeOut();
+// 	}
+// });
