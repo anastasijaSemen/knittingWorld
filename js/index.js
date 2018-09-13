@@ -74,7 +74,7 @@ function fetchProjectJson(i){
     .then(json => {
         const projectsContainer = document.querySelector(".projects_container");
         projectsContainer.innerHTML = 
-        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/><button>"+close+"</button>"+json.p+"</div>"
+        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/></div>"
     })
 }
 
