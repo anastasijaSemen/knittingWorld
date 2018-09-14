@@ -74,10 +74,10 @@ function fetchProjectJson(i){
     .then(json => {
         const projectsContainer = document.querySelector(".projects_container");
         projectsContainer.innerHTML = 
-        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/><button class=\"close\">"+close+"</button></div>"
-    })
+        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/></div>"
+    });
 }
-// dnokd';samcjkdmc;ldsM
+
 
 
 // // Closse origin photo
