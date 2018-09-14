@@ -77,6 +77,7 @@ function fetchProjectJson(i){
         "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/><button class=\"close\">"+close+"</button></div>"
     })
 }
+// dnokd';samcjkdmc;ldsM
 
 
 // // Closse origin photo
