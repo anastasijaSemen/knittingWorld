@@ -74,9 +74,10 @@ function fetchProjectJson(i){
     .then(json => {
         const projectsContainer = document.querySelector(".projects_container");
         projectsContainer.innerHTML = 
-        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/></div>"
+        "<div>"+json.title+"<img src=\""+json.bigPictureAddress+"\"/><button class=\"close\">"+close+"</button></div>"
     })
 }
+
 
 // // Closse origin photo
 // $('.js_close_thank_you').click(function() { // clik on button
