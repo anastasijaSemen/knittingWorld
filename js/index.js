@@ -102,5 +102,5 @@ function fetchProjectJson(i) {
 }
 
 function setCloseListener(){
-    document.querySelector().addEventListener("click", closeProjectDetails);
+    document.querySelector(".projects_container").addEventListener("click", closeProjectDetails);
 }
