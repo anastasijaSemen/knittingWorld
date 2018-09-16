@@ -51,12 +51,12 @@ document.querySelector(".green_heat").addEventListener("click", () => fetchProje
 document.querySelector(".knit_for_kids").addEventListener("click", () => fetchProjectJson(knit_for_kids))
 
 function fetchProjectJson(i) {
-    fetch('json/' + i + '.json')
+    fetch('json/' + '' + '.json')
         .then(data => data.json())
-        .then(json => {
+        .then(product => {
             const projectsContainer = document.querySelector(".projects_container");
             projectsContainer.innerHTML =
-                `<div class="json">${json.title}<img src="${json.bigPictureAddress}"/></div>`
+                `<div class="json">${product.title}<img src="${product.bigPictureAddress}"/></div>`
         });
 }
 
