@@ -63,7 +63,7 @@ function fetchProjectJson(i) {
                 <ul class="data_of_product">
                 <li class="list_to_data_of_product">${product.sizes}</li>
                 <li class="list_to_data_of_product">${product.price}</li>
-                
+                <button type="button" class="close_big_photo" onclick="toggle_visibility('id_of_element_to_toggle');">Close</button>
                 </div>
                 </div>
                 </div>`
@@ -71,17 +71,10 @@ function fetchProjectJson(i) {
             });
         }
         
-// Close origin photo
-$(function(){
-    $ ('.pop-block').each(function(){
-     var closeTrigger = $(this).find('.close-block').length;
-     if (closeTrigger < 1 ){ // проверяем наличие кнопки и если нет - добавляем
-      $(this).append('<span class="close-block"></span>');
-     }else{
-      return '';
-     }
-     $('.close-block').on('click', function(){
-      $(this).closest('.pop-block').fadeOut(100);
-     });
-    });
-  });
+        function toggle_visibility(id) {
+            let e = document.getElementById(id);
+            if(e.style.display == 'block')
+               e.style.display = 'none';
+            else
+               e.style.display = 'block';
+        }
