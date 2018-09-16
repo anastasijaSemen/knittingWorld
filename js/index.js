@@ -56,9 +56,7 @@ function fetchProjectJson(i) {
         .then(product => {
             const projectsContainer = document.querySelector(".projects_container");
             projectsContainer.innerHTML =
-        });
-}
-
+    
                 `<div class="flex_inner_html"><div class="json">${product.title}<img src="${product.bigPictureAddress}"/><div class="blok_for_data_json">
                 <h3 class="header_of_data_json">${product.description}</h3>
                 <ul class="data_of_product">
@@ -71,7 +69,9 @@ function fetchProjectJson(i) {
                 </div>
                 </div>`
 
-
+            });
+        }
+        
 // // Close origin photo
 // $('.js_close_thank_you').click(function() { // clik on button
 // 	$('.js_overlay_thank_you').fadeOut();
