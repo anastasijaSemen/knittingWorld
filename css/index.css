@@ -231,6 +231,7 @@ article.about {
       margin-top: 30px;
     }
 }  
+
 #about{
     display: flex;
     font-weight: bold;
@@ -378,6 +379,15 @@ div.photo_of_projects{
         margin-top: -15px;
     }
 }
+.flex_inner_html{
+    display: flex;
+}
+.json
+.blok_for_data_json
+
+.header_of_data_json
+.data_of_product
+.close_big_photo
 .section_footer{
     display: flex;
     }
