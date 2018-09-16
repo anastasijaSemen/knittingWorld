@@ -102,5 +102,5 @@ function fetchProjectJson(i) {
 }
 
 function setCloseListener(){
-    document.querySelector(".projects_container").addEventListener("click", closeProjectDetails);
+    document.querySelector(".close_big_photo").addEventListener("click", closeProjectDetails);
 }
