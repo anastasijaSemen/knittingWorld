@@ -407,7 +407,7 @@ div.photo_of_projects{
     list-style-type: none;
 }
 .close_big_photo{
-
+align-items: flex-end;
 }
 .section_footer{
     display: flex;
