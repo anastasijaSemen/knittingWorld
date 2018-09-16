@@ -43,12 +43,40 @@ $(function () {
     });
 });
 
-// imitation of backend. Data from JSON to section our projects
-document.querySelector(".woman_sweater").addEventListener("click", () => fetchProjectJson("woman_sweater"))
-document.querySelector(".green_dress").addEventListener("click", () => fetchProjectJson("green_dress"))
-document.querySelector(".broun_scarf").addEventListener("click", () => fetchProjectJson("broun_scarf"))
-document.querySelector(".green_heat").addEventListener("click", () => fetchProjectJson("green_heat"))
-document.querySelector(".knit_for_kids").addEventListener("click", () => fetchProjectJson("knit_for_kids"))
+function setClickListeners() {
+    // imitation of backend. Data from JSON to section our projects
+    document.querySelector(".woman_sweater").addEventListener("click", () => fetchProjectJson("woman_sweater"))
+    document.querySelector(".green_dress").addEventListener("click", () => fetchProjectJson("green_dress"))
+    document.querySelector(".broun_scarf").addEventListener("click", () => fetchProjectJson("broun_scarf"))
+    document.querySelector(".green_heat").addEventListener("click", () => fetchProjectJson("green_heat"))
+    document.querySelector(".knit_for_kids").addEventListener("click", () => fetchProjectJson("knit_for_kids"))
+}
+
+setClickListeners();
+
+function closeProjectDetails(){
+    const projectsContainer = document.querySelector(".projects_container");
+    projectsContainer.innerHTML =
+        `<h3 id="projects" class="our_projects"><b>Our Projects:</b></h3>
+        <div class="photo_of_projects">
+            <p class="woman_sweater">
+                <img src="pictures/thumbnails/womanSweater.jpg" alt="hand-made womans sweater" width="250" height="250">
+            </p>
+            <p class="green_dress">
+                <img src="pictures/thumbnails/greenDress.jpg" alt="long dress of machine knitting" width="250" height="400">
+            </p>
+            <p class="broun_scarf">
+                <img src="pictures/thumbnails/brounScurf.jpg" alt="Scurf knitted on hand" width="250" height="250">
+            </p>
+            <p class="green_heat">
+                <img src="pictures/thumbnails/greenHat.jpg" alt="hand-made green hat" width="250" height="250">
+            </p>
+            <p class="knit_for_kids">
+                <img src="pictures/thumbnails/knitForKids.jpg" alt="hand-made sweater for little girl" width="250" height="250">
+            </p>
+        </div>`;
+    setClickListeners();
+}
 
 function fetchProjectJson(i) {
     fetch('json/' + i + '.json')
@@ -63,18 +91,16 @@ function fetchProjectJson(i) {
                 <ul class="data_of_product">
                 <li class="list_to_data_of_product">${product.sizes}</li>
                 <li class="list_to_data_of_product">${product.price}</li>
-                <button type="button" class="close_big_photo" onclick="toggle_visibility('id_of_element_to_toggle');">Close</button>
+                <button type="button" class="close_big_photo">Close</button>
                 </div>
                 </div>
-                </div>`
+                </div>`;
 
-            });
-        }
-        
-        function toggle_visibility(id) {
-            let e = document.getElementById(id);
-            if(e.style.display == 'block')
-               e.style.display = 'none';
-            else
-               e.style.display = 'block';
-        }
+            setCloseListener();
+        });
+
+}
+
+function setCloseListener(){
+    document.querySelector().addEventListener("click", closeProjectDetails);
+}
