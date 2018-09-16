@@ -44,14 +44,14 @@ $(function () {
 });
 
 // imitation of backend. Data from JSON to section our projects
-document.querySelector(".woman_sweater").addEventListener("click", () => fetchProjectJson(woman_sweater))
-document.querySelector(".green_dress").addEventListener("click", () => fetchProjectJson(green_dress))
-document.querySelector(".broun_scarf").addEventListener("click", () => fetchProjectJson(broun_scarf))
-document.querySelector(".green_heat").addEventListener("click", () => fetchProjectJson(green_heat))
-document.querySelector(".knit_for_kids").addEventListener("click", () => fetchProjectJson(knit_for_kids))
+document.querySelector(".woman_sweater").addEventListener("click", () => fetchProjectJson("woman_sweater"))
+document.querySelector(".green_dress").addEventListener("click", () => fetchProjectJson("green_dress"))
+document.querySelector(".broun_scarf").addEventListener("click", () => fetchProjectJson("broun_scarf"))
+document.querySelector(".green_heat").addEventListener("click", () => fetchProjectJson("green_heat"))
+document.querySelector(".knit_for_kids").addEventListener("click", () => fetchProjectJson("knit_for_kids"))
 
 function fetchProjectJson(i) {
-    fetch('json/' + '' + '.json')
+    fetch('json/' + i + '.json')
         .then(data => data.json())
         .then(product => {
             const projectsContainer = document.querySelector(".projects_container");
