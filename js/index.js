@@ -71,10 +71,10 @@ function fetchProjectJson(i) {
             });
         }
         
-// // Close origin photo
-// $('.js_close_thank_you').click(function() { // clik on button
-// 	$('.js_overlay_thank_you').fadeOut();
-// });
+// Close origin photo
+$('.close_big_photo').click(function() { // clik on button
+	$('.close_big_photo').fadeOut();
+});
 
 // $(document).mouseup(function (e) { // clik around a button
 // 	const popup = $('.popup');
