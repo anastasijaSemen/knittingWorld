@@ -406,7 +406,7 @@ div.photo_of_projects{
 .data_of_product{
     list-style-type: none;
 }
-.close_big_photo{
+#close_big_photo{
 align-items: flex-end;
 }
 .section_footer{
