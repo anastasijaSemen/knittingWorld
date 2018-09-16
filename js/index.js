@@ -57,13 +57,12 @@ function fetchProjectJson(i) {
             const projectsContainer = document.querySelector(".projects_container");
             projectsContainer.innerHTML =
     
-                `<div class="flex_inner_html"><div class="json">${product.title}<img src="${product.bigPictureAddress}"/><div class="blok_for_data_json">
+                `<div class="flex_inner_html"><div class="json">${product.title}<img src="${product.bigPictureAddress}"/>
+                <div class="blok_for_data_json">
                 <h3 class="header_of_data_json">${product.description}</h3>
                 <ul class="data_of_product">
                 <li class="list_to_data_of_product">${product.sizes}</li>
-                <li class="list_to_data_of_product">${product.prise}</li>
-                <li class="list_to_data_of_product">${product.acrylic}</li>
-                <li class="list_to_data_of_product">${product.available}</li>
+                <li class="list_to_data_of_product">${product.price}</li>
                 <button type="button" class="close_big_photo">Close</button>
                 </div>
                 </div>
