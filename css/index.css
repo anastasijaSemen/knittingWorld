@@ -484,7 +484,34 @@ footer.footer{
         margin: 1px;
     }
 }
-
+#contact{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 5px;
+    padding: 20px;
+    background-color: lightgrey;
+    text-decoration: underline;
+    font-size: 20px;
+}
+/* @media only screen and (max-width: 600px){
+    .contacts_form{
+        display: block;
+        margin: 2px;
+        padding: 10px;
+        font-size: 16px;
+    }
+} 
+@media only screen and (max-width: 450px){
+    .contacts_form{
+        margin-top: 90px;
+    } 
+}
+@media only screen and (max-width: 350px){
+    .contacts_form{
+        margin-top: 40px;
+    } 
+} */
 .footer_slogan, .copyright{
     font-family:  'Abril Fatface', cursive;
 }
